@@ -1,0 +1,61 @@
+
+<div class="row-fluid directions" ng-controller="directions" >
+
+    <div  class="span8 routes"   >
+
+        <input type="text" id="autocomplete" placeholder="Where would you like to go?">
+        <div id="map"></div>
+
+
+
+    </div>
+
+
+    <div class="span4 showDir" >
+        <a  href="#/transportation">
+            <button class="btn btn-block btn-success"   >Explore Destinations</button>
+        </a>
+
+        <button class="btn btn-block btn-success" ng-show="qrcode" ng-click="open()"  >Mobile Directions</button>
+
+        <div id="directions-panel">
+
+        </div>
+
+    </div>
+
+    <div modal="shouldBeOpen" close="close()" options="opts" class="mobileDirections">
+        <div class="modal-header">
+            <button class="btn btn-primary  btn-large cancel pull-right" ng-click="close()">Cancel</button>
+            <h1 align="center">Mobile Directions</h1>
+            <h3 align="center">Choose your method below</h3>
+        </div>
+        <div class="modal-body">
+
+            <div class="row">
+                <div class="span4  mobDir">
+                    <em>
+                        Get a link to your email
+
+                    </em>
+
+                    <input id="usermail" type="email" ng-model="userEmail"  class="search-query">
+                    <p ng-show="mailSent">Mail has been sent, thank you for registering. Click "Home" to continue</p>
+                    <button class="btn btn-success  btn-large" ng-show="mailSent" ng-click="close()">Home</button>
+                    <button class="btn btn-large btn-primary" ng-show="!mailSent" ng-click="sendTheMail()"> Send email </button>
+                    <h1> -OR- </h1>
+                    <em>
+                        Scan the QR code for a link with directions    
+
+                    </em>
+                    <iframe  class="qrcodeFrame" ng-src="http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl={{qrcode}}"  >
+                    </iframe>
+
+                </div>   
+
+            </div>
+
+        </div>  
+    </div>
+
+</div>

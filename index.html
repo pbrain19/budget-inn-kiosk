@@ -1,0 +1,174 @@
+ 
+<!DOCTYPE html>
+<html lang="en" data-ng-app="metroHotelDemo">
+    <head>
+        <title>Budget Inn</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/scrollbars.css" rel="stylesheet">
+        <link href="plugins/modern-ticker.css" rel="stylesheet">
+
+        <!-- Google Analytics Updated to Universal-->
+        <script type = "text/javascript">
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-44707060-1', 'auto');  
+        </script> 
+        <meta name="google-translate-customization" content="dfe5b04c039b902c-71a4dc728af57539-g87b1ada64d8fcab6-11"></meta>
+    </head>
+    <body oncontextmenu="return false" ng-controller="mainCtrl">
+        <div class="container-fluid maincont">
+            <div class="row-fluid" id="headContainer" >
+                <div class="span12" >
+                    <a href="#/weather">
+                        <div class="span2" id="weatherdiv">
+                        </div>
+                    </a>
+                    <div class="span3 offset2"> 
+                        <img src="img/metro/logos.png" alt="brand" id="brand"   />
+                    </div>
+
+                    <div class="  pull-right  power"  >
+                        <img src="img/metro/Pwr_by_Mclick.png" alt="Pwr_by_Mclick"  width="130" height="75"  />
+                        <h1 id="timeclock" >This is the time</h1></div>
+                </div>
+
+            </div>
+
+            <div class="row tickerRow">
+                <div class="span11"  >	
+                    <div class="modern-ticker mt-round">
+
+                        <div class="mt-label">NEWS:</div>  
+                        <div class="mt-news">
+
+                            <ul>
+                            </ul>
+
+                        </div> 
+
+                    </div>
+
+                </div>
+                <div class="span1 pull-right">
+                    <div id="google_translate_element"></div><script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,en,es,ko,ru,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+                            }
+                    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+            </div>
+
+            <div class="row-fluid" id="mainrow">
+                <div class="span9" id="mainView">
+
+                    <data-ng-view  ng-animate="{enter:'animated fadeInLeftBig', leave:' animated bounceOut'}" > </data-ng-view>
+
+
+                </div>
+                <div class="span3" id="advertisement">
+                    <a ng-href="#/ads">
+                        <img  ng-src="img/metro/Happiest_song.png" alt="lionKing"/>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row" id="footerNav">
+
+                <div class=" metroNavs" > 
+                    <a href="#/home"> 
+                        <img src="img/metro/navs/home.png"  alt="home">
+
+                        <h4 class="navlabels" align="center">Home</h4>
+                    </a>
+                </div>
+                <div class=" metroNavs" >
+                    <a href="#/activities"> 
+                        <img src="img/metro/navs/activities.png"  alt="activities">
+
+                        <h4 class="navlabels" align="center">Activities</h4>
+                    </a>
+                </div>
+                <div class=" metroNavs">
+                    <a href="#/dinning"> 
+                        <img src="img/metro/navs/dinning.png" alt="dinning">
+
+                        <h4 class="navlabels" align="center">Dining</h4>
+                    </a>
+                </div>
+                <div class=" metroNavs">
+                    <a href="#/flights"> 
+                        <img src="img/metro/navs/flights.png" alt="flights">
+
+                        <h4 class="navlabels" align="center">Flights</h4>
+                    </a>
+                </div>
+                <div class=" metroNavs">
+                    <a href="#/news"> 
+                        <img src="img/metro/navs/news.png" alt="news">
+
+                        <h4 class="navlabels" align="center">News</h4>
+                    </a>
+                </div>
+                <div class=" metroNavs">
+                    <a href="#/transportation"> 
+                        <img src="img/metro/navs/transport.png"  alt="transportation">
+
+                        <h4 class="navlabels trans"  >Transportation</h4>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- scripts to load after page does. Performance enhancer -->
+
+
+        <script type="text/javascript" src="plugins/date.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="plugins/jquery.modern-ticker.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.zweatherfeed.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script src="plugins/angular-ui.js"></script>
+        <script type="text/javascript" src="js/angular-resource.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/ang/app.js"></script>
+        <script type="text/javascript" src="js/ang/controllers.js"></script>
+        <script type="text/javascript" src="js/ang/directives.js"></script>
+        <script type="text/javascript" src="js/ang/filters.js"></script>
+        <script type="text/javascript" src="js/ang/services.js"></script>
+        <script type="text/javascript" src="plugins/xml2json.js"></script>
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqLx4skhsKnyzazGRCShKgYcmnqmmppGE&sensor=true&libraries=places">
+        </script> 
+        <script type="text/javascript" src="plugins/gmap3.min.js"></script>     
+        <script type="text/javascript" src="plugins/Chart.js"></script>
+        <script src="plugins/angles.js"></script>
+        <script src="plugins/idle-timer.min.js"></script>
+        <script type="text/javascript" src="js/mandrill.js"></script>
+        <script type="text/javascript" src="js/jquery.idle.js"></script>
+    </body>
+
+
+</html>

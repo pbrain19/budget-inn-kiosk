@@ -1,0 +1,15 @@
+<div class="container-fluid weatherforecast"   ng-controller='weather'>
+  
+        <h1 align='center'>Current Weather</h1>
+        <div class="weatherDay" ng-repeat="day in forecasts">
+            <h2 align='center'>
+                {{day.date.weekday_short}}
+            </h2>
+            <h3 align='center'>High: {{ day.high.fahrenheit }} <b>&#8457;</b> </h3>
+            <h3 align='center'>low: {{ day.low.fahrenheit }}  <b>&#8457;</b> </h3>
+            <strong> <em> <p>{{textforcasts[$index].fcttext }}</p></em></strong>
+            <img ng-src='{{ day.icon_url }}' alt="{{day.icon}}" class='weatherImage' />
+
+        </div>
+    
+</div>

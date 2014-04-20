@@ -1,0 +1,33 @@
+
+<div class="container-fluid  news" ng-controller='newsCTRL' >
+
+    <h1 align='center'>Current News</h1>
+    <div class="container"> 
+        <div class="span11"> 
+            <div class="article"  ng-click="open(' {{news.link}} ')" ng-repeat="news in feeds">
+
+                <h3 >{{news.title}} </h3>
+                <p>{{news.contentSnippet}}</p> <span>{{news.publishedDate}}</span>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div modal="shouldBeOpen" close="close()" options="opts">
+        <div class="modal-header">
+            
+            <button class="btn btn-large btn-info pull-right" ng-click="close()">Home</button>
+            <h1 align="center">Top News</h1>
+        </div>
+        <div class="modal-body">
+            <h3 align="center">Scan the QR code with your phone to read the full article </h3>
+            <iframe sandbox="allow-forms allow-scripts" id="newsframe" ng-src="http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl={{siteTarget}}" >
+
+
+            </iframe>
+        </div>
+        
+    </div>
+
+</div>

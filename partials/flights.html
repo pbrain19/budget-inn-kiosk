@@ -1,0 +1,56 @@
+<div class="container flightStatus" ng-controller="flightsCTRL">
+    <div class="row-fluid "> 
+
+        <button class="btn btn-large  flighttabs nav-tabs " ng-click="flightControl = 'arriving'">Arriving</button>
+        <button class="btn btn-large  flighttabs nav-tabs" ng-click="flightControl = 'departing'">Departing</button>
+
+        <input id="flightsearch" type="text"   placeholder="Filter by flight number">
+
+
+        <button class="btn btn-large  flighttabs nav-tabs" ng-click="search=''">Reset</button>
+
+        <div   ng-switch on="flightControl">
+            <div ng-switch-when="arriving">
+                <table>
+                    <tr>
+                        <th >Flight Number</th>                          
+                        <th>Aircraft Type</th>                            
+                        <th>Origin</th>                            
+                        <th>Arrival Time </th>
+                        <th>Origin Departed Time</th>
+                    </tr>
+                    <tr ng-repeat="flight in arriving| filter:search">
+                        <td > {{  flight.ident}} </td>
+                        <td>{{flight.aircrafttype}}</td>
+                        <td>{{flight.originCity}}</td>
+                        <td>{{ flight.estimatedarrivaltime * 1000 | date:'short' }}</td>
+                        <td>{{flight.actualdeparturetime * 1000| date:'short' }}</td>
+                    </tr>
+                </table>
+            </div>  
+            <div ng-switch-when="departing" >
+
+                <table>
+                    <tr>
+                        <th >Flight Number</th>                          
+                        <th>Aircraft Type</th>                            
+                        <th>Destination</th>                            
+                        <th>Departing Time</th>
+                        <th>Destination Arrival Time</th>
+                    </tr>
+                    <tr ng-repeat="flight in departing| filter:search">
+                        <td > {{  flight.ident}} </td>
+                        <td>{{flight.aircrafttype}}</td>
+                        <td>{{flight.destinationCity}}</td>
+                        <td>{{ flight.filed_departuretime * 1000 | date:'short' }}</td>
+                        <td>{{flight.estimatedarrivaltime * 1000| date:'short' }}</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+        </div> 
+
+    </div>
+</div>

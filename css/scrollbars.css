@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 22, 2013, 4:24:24 AM
+    Author     : fay
+*/
+
+
+.tilepanel::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.tilepanel::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}
+
+.tilepanel::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+
+.showDir::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.showDir::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}
+
+.showDir::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+
+
+
+#homeFrame::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#homeFrame::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}
+
+#homeFrame::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+
+.news::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.news::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}
+
+.news::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+
+.flightStatus::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.flightStatus::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}
+
+.flightStatus::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+.transport .span4::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+
+.transport .span4::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px white ;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.transport .span4::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: black;
+}

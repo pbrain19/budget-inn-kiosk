@@ -1,0 +1,694 @@
+#mainView iframe{
+    pointer-events: none;
+
+} 
+iframe{
+    border:none;
+}
+@font-face
+{
+    font-family: metroFonts;
+    src: url('fonts/HelveticaNeueLTPro-Md.otf')  
+}
+
+h1,h2,h3,h4,h5{
+    font-family: calibri !important;
+
+}
+.modal-header h1{
+
+    padding-left: 45px;
+}
+.modal-header{
+    background: #1167B1;
+    color: white;
+
+} 
+.modal-header button{
+    margin-top: 7px; 
+}
+*{ 
+    font-family: metroFonts !important;
+    letter-spacing:1px !important;
+}
+
+a:link {text-decoration:none !important;}
+a:visited {text-decoration:none !important;}
+a:hover {text-decoration:none !important;}
+a:active {text-decoration:none !important;}
+#autocomplete {
+    width: 100%;
+    height: 25px;
+
+
+}
+#map{
+    width: 100%;
+    height: 500px;
+
+    pointer-events:none;
+}
+.mobileDirections{
+
+
+}
+body  { 
+
+    overflow: hidden;
+    background: #BCC8CF !important ;  
+    border: solid 30px white;
+    min-height: 0% !important;
+
+
+}  
+.goog-te-gadget-icon{
+    display: none !important;
+
+}
+
+.goog-tooltip {
+    display: none !important;
+    visibility:hidden !important;
+
+}
+.goog-te-banner-frame{
+    display: none !important;
+
+
+}
+
+.maincont{
+    border-top: solid medium  #1167B1;
+    border-left: solid medium  #1167B1;
+    border-right: solid medium  #1167B1;
+    padding-top: 2px;
+    color: white;
+}
+
+a:link {
+    color:black;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color:black;
+}
+a:active {
+    color:black;
+}
+
+#brand{
+    position:  relative;
+    top: -18px;
+    left: 75px; 
+}
+#food{
+    color: white;
+
+} 
+.nav-tabs a {
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.tab-content {
+
+    overflow: no-display;
+}
+
+.metroNavs{
+    display: inline-block;
+    margin: 50px 50px 0 0;
+    position: relative;
+    left: 21%;
+    color: white;
+}
+.metroNavs img{
+
+    width: 135px;
+    height: 135px;
+
+}
+
+#food span2{
+
+    margin-left: 0px;
+}
+.navlabels{
+    position: relative;
+    -webkit-transform: translate(0px,-5px);
+    color: white;
+}  
+.trans{
+    position: relative;
+    text-align: center;
+
+}
+
+#footerNav{
+
+    background-image: url(../img/metro/DOCK.png);
+    background-size: 89% 59%;
+    background-position-y: bottom;
+    background-position-x: 130px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4%;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 60px;
+
+}
+
+#footerNav a:focus{
+    text-decoration: none;
+
+}
+#advertisement{
+    padding: 20px;
+    background: white;
+    height: 100%;
+
+    box-shadow: 5px 5px 5px #1167B1;
+} 
+#advertisement img{
+    height: 100%;
+
+}
+
+#mainrow{
+
+    position: relative;
+
+
+    height: 600px;
+}
+
+#mainView{
+    overflow:  hidden;
+    height: 100%;
+    background-color: white;
+    padding:1.7%;
+    box-shadow: 5px 5px 5px #1167B1;
+    position: relative;
+}
+#timeclock{
+
+    color: white;
+}
+.tilepanel{ 
+    height: 450px;
+    overflow-x: auto;
+
+} 
+.foodpics{
+    height: 100%;
+}
+
+
+.filters{
+
+    margin-left: 10px !important;
+}
+.filters button{
+    width:190px;
+    height: 65px;
+    margin-bottom: 11px;
+    margin-left: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 9px;
+    line-height: 19px;
+}
+
+.overImage{
+    background-color: black;
+    opacity: .7;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+.tileItems img{
+    height: 100%; 
+    width: 100%;
+}
+
+
+.tileItems h4{
+    position: absolute;
+    bottom: 10px;
+    width: 91%;
+    background-color: white; 
+}
+.foodtiles img{
+    height: 100%;
+}
+
+.tileItems , .foodtiles{
+    position: relative;
+    height: 200px; 
+    margin-left: 0px !important; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    color: black;
+
+    text-align: center;
+
+}
+
+#homeFrame{
+    width:100%; 
+    height:100%;  
+    margin: auto auto;
+    overflow: scroll;
+    overflow-x: hidden;
+} 
+
+.restaurants{
+
+    width:100%; 
+    height:100%;  
+    margin: auto auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#weatherdiv{
+
+    font-size: 1.343em;
+    margin-top: 20px;
+    font-weight: bold;
+    height: 100px;
+    color: white !important;
+}
+
+#headContainer .pull-right img{
+
+    margin-left: 25px;
+}
+.weatherItem{
+    background-position-x: 90px !important;
+
+}
+#weatherdiv a{
+    display: none;
+}
+
+
+.news{
+    background-color: #1167B1;
+    color:white; 
+    height: 100%;
+    overflow-y: auto;
+}
+
+.news .container-fluid{
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.news h3{
+    color:   #2233e1;
+    font-weight: bold;
+
+}
+.news p{
+    font-size: 1.3em;
+    color:#8d8e97;
+}
+
+
+.article{
+    background-color: white !important;
+    color: #1224e0; 
+
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.article:hover{
+    background-color: gray;
+
+}
+
+#newsframe{
+    position: relative;
+    left: 40%;
+    border: none;
+    width: 350px;
+    height: 230px;
+
+}
+
+.newsframe{
+    width: 100%;
+    height: 400px;
+
+}
+.articleHolder{
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+
+body .modal {
+
+    width: 1300px;
+    margin-left: -650px;
+    height: 900px;
+
+}
+
+body .modal-body{
+    max-height:1000px;
+    min-height: 600px;
+    position: relative;
+}
+
+.modal-body iframe{
+    height: 600px;
+    width: 100%;
+    border: none;
+}
+.article .span11{
+
+    height: 500px !important;
+}
+.article{
+    margin-bottom: -10px;
+    position: relative;
+    background-color: white;
+    border-bottom: solid thick black;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+.weatherforecast{
+
+    background-color:  #1167B1;
+    color: black;
+    height: 100%;
+}
+.weatherImage{
+    -webkit-transform: scale(2.8);
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.weatherforecast p{
+    text-align: center;
+    background-color: blue;
+    height: 120px;
+    color: white;
+
+}
+
+.weatherDay h2{
+    text-decoration: underline;
+    text-decoration-color: Blue;
+    font-style:italic;
+    font-weight: bolder;
+
+
+}
+
+.weatherDay{
+    display: inline-table;
+    height: 430px;
+    width: 220px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 55px;
+
+    position: relative;
+    left: 48px;
+}
+
+.mt-news{
+    padding-top: 5px;
+
+} 
+.tickerRow .span1{
+    position: relative;
+    right: 85px;
+
+}
+.transport input{
+    width: 90%; 
+
+} 
+.transport button{
+    font-weight: bold;
+    font-size: 2em;
+    height: 65px; 
+    margin-left: 0%;
+    margin-right: 31%;
+    margin-bottom: 13px;
+    padding: 7px;
+
+}
+.poiExplore h4{
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    opacity: .8;
+    color: black;
+    width: 100%;
+
+}
+.poiExplore{
+    position: relative;
+    height: 500px !important;
+
+    left: 2%;
+}
+.transport pre{
+
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.tilesHolder{
+
+    position: relative;
+    height: 100%;
+    background-color: #1167B1;
+    color: white; 
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 65px;
+}
+.transport{
+
+    background-color: #1167B1;
+    padding: 25px !important;
+    padding-bottom: 15px !important;
+
+}
+
+.directions button{
+    font-size: 2em;
+    height: 60px;
+    margin-bottom: 20px;
+
+}
+#map-canvas { 
+    height: 490px;
+    width: 100%; 
+
+    color:black;
+    font-weight: bold;
+
+}
+.backButton img{
+    position: relative;
+    top: 20px;
+}
+
+.flightStatus table{
+    text-align: center; 
+    font-size: 1.6em;
+    color:black;
+    margin-top: 20px;
+    border : solid 15px #BCC8CF;
+    background-color: white;
+
+}
+.flighttabs{
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+
+}
+.flightStatus th{
+    border-bottom: solid 15px #BCC8CF;
+}
+tr:nth-child(even){
+
+    background-color: #dadada;
+}
+.flightStatus td,.flightStatus th{
+    border-right: solid 15px #BCC8CF;  
+    padding: 14px;
+}
+.tab-content{
+    overflow-y: hidden !important;
+}
+
+.flightStatus{
+    background-color: #1167B1;
+    color:whitesmoke;
+    height: 500px;
+    overflow: auto;
+
+    padding: 20px;
+}
+
+body{
+    top:0px !important;
+} 
+.weatherCity{
+    display: none;
+}
+.weatherTemp , .weatherDesc 
+,  .weatherRange , .weatherWind {
+    float: left;
+    clear: both;
+}
+.weatherItem{
+
+    background-position: top;
+
+    opacity: .75282;
+    height: 80px;
+
+}
+.categoriesHolder .row-fluid div{
+    display: inline-block;
+
+}
+.transport .span4{
+    position: relative;
+    height: 100%;
+
+    margin: 0px !important;
+    padding: 0 10px 0 20px;
+    overflow-x: hidden;
+
+}
+
+.transItem{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    margin: 1%;
+    position: relative;
+    left: 20px;
+}
+.transItem img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#directionsHolder {
+    background-color: white;
+    font-weight: bold;
+    max-height: 490px !important;
+}
+#directionsHolder img {
+    display: none;
+}
+
+
+#map-canvas img { 
+    max-width:none;
+
+}
+
+.foodData button{
+    display: inline-block;
+
+}
+.routes{
+    height: 100%;
+}
+
+.routes iframe{
+    width: 100%;
+
+    height: 100%;
+}
+#directions-panel {
+
+    pointer-events: none;
+
+}
+#directions-panel {
+    text-align: center;
+
+}
+.favDay{
+    position: absolute;
+    top:14%;
+    left: -.5%;
+}
+
+.chartTitle{
+    position: absolute;
+    top:10%;
+    left: 1.9%;
+}
+.ratingInfo{  
+    position: absolute;
+    top:  49%;
+    left: 1%; 
+    padding: 25px;
+    height: 170px;
+    text-align: left;  
+} 
+.sliders{
+    position: relative;
+    left: 100px;  
+}
+.showDir{
+    height: 550px;
+    overflow-y: auto;
+}
+.power{
+    padding-top: 10px;
+
+}
+.qrcodeFrame{
+    width: 200px !important;
+    height: 200px !important;
+    border:none;
+    position: relative;
+
+}
+.mobDir{ 
+    padding-top: 40px; 
+    text-align: center;
+}
+.mobDir button{ 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.mobDir h1{
+    margin-bottom: 5%;
+
+}
+.mainCarousel{
+    width: 100%;
+    height: 100%;
+    display: block;
+}

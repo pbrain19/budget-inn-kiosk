@@ -1,0 +1,45 @@
+<div class="container  tilesHolder" ng-controller="couponsEventsCTRL">
+
+    <h1 align="center">Exclusive Coupon</h1>
+
+    <div class="span10 "> 
+        <div class="row-fluid  tilepanel">
+            <div class="span3 tileItems"  ng-animate="{enter:'animated flipInY', leave:' animated flipOutY'}"   ng-repeat="act in items | filter:search"  ng-click="open('{{act.link}}')" >
+
+                <img src="{{act.image}}" alt="{{act.desc}}" >
+                <br>
+                <h5 align="center"> {{act.desc}}  </h5>
+                <h3  align="center"> ${{act.price}}$ </h3>
+
+            </div>
+        </div>
+    </div>
+    <div class="span1 filters"> 
+        <button class="btn btn-warning btn-large" ng-click="search.type='shows' "  > Shows </button>
+        <button class="btn btn-warning btn-large"  ng-click="search.type='events' "> Events </button>
+        <button class="btn btn-warning btn-large"  ng-click="search.type='attractions' "> Attractions </button>
+        <button class="btn btn-warning btn-large" ng-click="search.type='food'" > Food </button>
+        <button class="btn btn-warning btn-large" ng-click="search.type=''  " > All </button>
+    </div>
+
+
+
+
+
+
+    <div modal="shouldBeOpen" close="close()" options="opts">
+        <div class="modal-header">
+            <h3 align="center">Special Coupon</h3>
+        </div>
+        <div class="modal-body">
+            <iframe sandbox="allow-forms allow-scripts" ng-src="{{siteTarget}}" width="1000" height="500">
+            </iframe>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+        </div>
+    </div>
+
+
+
+</div>
